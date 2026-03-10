@@ -30,7 +30,8 @@ target_include_directories(glad PUBLIC
 # =====================
 # Executable
 # =====================
-add_executable(platformer src/main.cpp)
+add_executable(platformer src/main.cpp
+        src/Shader.h)
 
 target_link_libraries(platformer PRIVATE glfw glad)
 
